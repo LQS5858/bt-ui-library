@@ -1,5 +1,6 @@
 name: deploy
 #git token  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
+#
 on:
   push:
     branches: [master] # master 分支有 push 时触发
