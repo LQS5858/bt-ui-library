@@ -1,4 +1,4 @@
-# bt-ui-test
+# bt-ui-library
 
 ## Project setup
 ```
