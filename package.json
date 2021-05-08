@@ -7,8 +7,8 @@
     "build": "vue-cli-service build",
     "test:unit": "vue-cli-service test:unit",
     "lint": "vue-cli-service lint",
-    "styleguide": "vue-styleguidist server",
-    "styleguide:build": "vue-styleguidist build"
+    "docs": "vue-styleguidist server",
+    "docs:build": "vue-styleguidist build"
   },
   "dependencies": {
     "core-js": "^3.6.5",
