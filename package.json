@@ -52,7 +52,7 @@
   "gitHooks": {
     "pre-commit": "lint-staged"
   },
-  "home": "https://lqs5858.github.io/bt-ui-library/",
+  "homepage": "https://lqs5858.github.io/bt-ui-library/",
   "repository": {
     "type": "git",
     "url": "https://github.com/LQS5858/bt-ui-library"
