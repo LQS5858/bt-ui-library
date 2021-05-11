@@ -1,10 +1,8 @@
 {
   "name": "bt-ui-library",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "private": false,
   "scripts": {
-    "serve": "vue-cli-service serve",
-    "build": "vue-cli-service build",
     "test:unit": "vue-cli-service test:unit",
     "lint": "vue-cli-service lint",
     "bootstrap": "yarn || npm i",
@@ -54,7 +52,24 @@
   "gitHooks": {
     "pre-commit": "lint-staged"
   },
-  "home": "",
+  "home": "https://lqs5858.github.io/bt-ui-library/",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/LQS5858/bt-ui-library"
+  },
+  "keywords": [
+    "bt",
+    "vue",
+    "ui",
+    "components",
+    "javascript"
+  ],
+  "bugs": {
+    "url": "https://github.com/LQS5858/bt-ui-library/issues"
+  },
+  "license": "MIT",
+  "unpkg": "lib/index.js",
+  "style": "lib/theme-chalk/index.js",
   "lint-staged": {
     "*.{js,jsx,vue}": [
       "vue-cli-service lint",

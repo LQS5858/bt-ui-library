@@ -5,14 +5,15 @@
 yarn bootstrap
 ```
 
-### Compiles and hot-reloads for development
-```
-yarn serve
-```
 
 ### Compiles and minifies for production
+
 ```
-yarn build
+yarn dist
+```
+### Compiles docs
+```
+yarn docs:build
 ```
 
 ### Run your unit tests
