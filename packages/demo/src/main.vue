@@ -1,19 +1,22 @@
 <template>
-  <button class="btn"
-          :type="htmlType"
-          :class="btnClass"
-          :disabled="disabled"
-          @click="handleClick">
-    <!-- @slot 按钮的内容 -->
-    <slot />
-    <!-- @slot 按钮的图标 -->
-    <slot name="icon" />
-  </button>
+  <div>
+    <button class="btn"
+            :type="htmlType"
+            :class="btnClass"
+            :disabled="disabled"
+            @click="handleClick">
+      <!-- @slot 按钮的内容 -->
+      <slot />
+      <!-- @slot 按钮的图标 -->
+      <slot name="icon" />
+    </button>
+    <span>demo 测试</span>
+  </div>
 </template>
 
 <script>
 export default {
-  name: 'app-button',
+  name: 'demo',
   props: {
     /**
      * 按钮主题，有效值：
