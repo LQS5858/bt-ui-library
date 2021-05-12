@@ -55,9 +55,7 @@ export default {
     prop: 'value',
     event: 'change'
   },
-  props: {
-    /**
-    @params
+  /**
     value 双向数据绑定v-model
     list 下拉展开列表数据
     listStyle 展开列表容器样式
@@ -65,10 +63,18 @@ export default {
     selectStyle 选择框样式
     hoverBg 鼠标hover背景样式
      */
+  props: {
+    /**
+     * 双向数据绑定
+     * @values areaCode:CN
+     */
     value: {
       type: [String]
     },
-    //   list数据格式
+    /**
+     * 下拉展开数据
+     * @values  Array
+     */
     list: {
       type: [Array],
       required: true,
@@ -93,10 +99,18 @@ export default {
         ]
       }
     },
+    /**
+     * 展开下拉数据的行背景
+     * @values string
+     */
     hoverBg: {
       type: [String],
       default: '#357DE1'
     },
+    /**
+     * 展开下拉行样式对象
+     * @values Object
+     */
     rowStyle: {
       type: [Object],
       default () {
@@ -105,6 +119,10 @@ export default {
         }
       }
     },
+    /**
+     * 下拉框样式对象
+     * @values Object
+     */
     listStyle: {
       type: [Object],
       default () {
@@ -116,6 +134,10 @@ export default {
         }
       }
     },
+    /**
+     * 国家区域选择框样式对象
+     * @values Object
+     */
     selectStyle: {
       type: [Object],
       default () {
@@ -178,6 +200,10 @@ export default {
     selectedValue ({ label, code, areaCode }) {
       this.curValue = label
       this.showPopver = false
+      /**
+       * change事件
+       * @param {areaCode}
+       */
       this.$emit('change', areaCode)
       this.clearSearch()
     }
