@@ -1,1 +1,4 @@
-{"demo":"../../packages/demo"}
+{
+    "country": "../../packages/country",
+    "demo": "../../packages/demo"
+}
