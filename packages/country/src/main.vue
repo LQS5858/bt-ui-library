@@ -38,7 +38,7 @@
   </div>
 </template>
 <script>
-import locale from 'bt-ui/src/mixins/locale'
+import locale from 'bt-ui/src/locale'
 export default {
   name: 'BtCountry',
   data () {
