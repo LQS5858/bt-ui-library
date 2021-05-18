@@ -8,7 +8,7 @@
     "bootstrap": "yarn || npm i",
     "build:file": "node build/bin/initComponent.js && node build/bin/iconInit.js && node build/bin/build-entry.js && node build/bin/version.js ",
     "build:theme": "node build/bin/initComponent.js && node build/bin/gen-cssfile",
-    "dist": "webpack --config build/webpack.conf.js && webpack --config build/webpack.common.js",
+    "dist": "npm run build:file && webpack --config build/webpack.conf.js && webpack --config build/webpack.common.js",
     "docs": "vue-styleguidist server",
     "docs:build": "vue-styleguidist build"
   },
