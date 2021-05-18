@@ -6,7 +6,7 @@ const ComponentsJson = {}
 console.log(dirs)
 dirs.forEach(item => {
   if (item === 'theme-chalk') return
-  ComponentsJson[item] = `../../packages/${item}`
+  ComponentsJson[item] = `./packages/${item}`
 })
 
 fs.writeFileSync(path.resolve(__dirname, '../../component.json'), JSON.stringify(ComponentsJson))

@@ -1,3 +1,4 @@
+
 <template>
   <div>
     <button class="btn"
@@ -87,6 +88,3 @@ export default {
   }
 }
 </script>
-
-<style lang="scss">
-</style>

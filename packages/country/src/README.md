@@ -1,6 +1,0 @@
-
-
-### Example
-```
-<BtCountry :list="[]"></BtCountry>
-```

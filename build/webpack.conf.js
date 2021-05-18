@@ -10,7 +10,7 @@ const config = require('./config')
 module.exports = {
   mode: 'production',
   entry: {
-    app: ['./src/index.js']
+    app: [path.resolve(__dirname, '../src/index.js')]
   },
   output: {
     path: path.resolve(process.cwd(), './lib'),
