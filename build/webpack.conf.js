@@ -1,12 +1,12 @@
 
 const path = require('path')
 const ProgressBarPlugin = require('progress-bar-webpack-plugin')
-
+const uppercamelcase = require('uppercamelcase')
 const VueLoaderPlugin = require('vue-loader/lib/plugin')
 const TerserPlugin = require('terser-webpack-plugin')
-const { name } = require('../package.json')
+let { name } = require('../package.json')
 const config = require('./config')
-
+name = uppercamelcase(name)
 module.exports = {
   mode: 'production',
   entry: {

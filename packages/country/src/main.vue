@@ -15,7 +15,7 @@
     <div class="list"
          :id="showPopver?'show-list':''"
          :style="listStyle">
-      <el-input :placeholder="$t('views_account_real_info_card_search')"
+      <el-input placeholder="99"
                 id="searchInput"
                 clearable
                 v-model.trim="searchValue">
@@ -38,8 +38,9 @@
   </div>
 </template>
 <script>
+import locale from 'bt-ui/src/mixins/locale'
 export default {
-  name: 'drop-down-search',
+  name: 'BtCountry',
   data () {
     return {
       curValue: null,
@@ -47,6 +48,7 @@ export default {
       showPopver: false
     }
   },
+  mixins: [locale],
   model: {
     prop: 'value',
     event: 'change'

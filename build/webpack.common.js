@@ -3,19 +3,19 @@ const path = require('path')
 const ProgressBarPlugin = require('progress-bar-webpack-plugin')
 
 const VueLoaderPlugin = require('vue-loader/lib/plugin')
-
+const uppercamelcase = require('uppercamelcase')
 const config = require('./config')
-const { name } = require('../package.json')
-
+let { name } = require('../package.json')
+name = uppercamelcase(name)
 module.exports = {
   mode: 'production',
   entry: {
-    app: ['./src/index.js']
+    app: [path.resolve(__dirname, '../src/index.js')]
   },
   output: {
     path: path.resolve(process.cwd(), './lib'),
     publicPath: '/dist/',
-    filename: 'element-ui.common.js',
+    filename: 'bt-ui.common.js',
     chunkFilename: '[id].js',
     libraryExport: 'default',
     library: name,
