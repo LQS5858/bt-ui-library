@@ -2,7 +2,7 @@
 
 import Country from '../packages/country/index.js'
 import Demo from '../packages/demo/index.js'
-import locale from 'bt-ui/src/locale'
+import locale from './locale'
 
 const components = [
   Country,

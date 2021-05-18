@@ -1,4 +1,4 @@
-import defaultLang from 'bt-ui/src/locale/lang/zh_CN'
+import defaultLang from './lang/zh_CN'
 import Vue from 'vue'
 import deepmerge from 'deepmerge'
 import Format from './format'
