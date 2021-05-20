@@ -9,7 +9,7 @@
     "build:file": "node build/bin/initComponent.js && node build/bin/iconInit.js && node build/bin/build-entry.js && node build/bin/version.js ",
     "build:theme": "node build/bin/initComponent.js && node build/bin/gen-cssfile && gulp build --gulpfile packages/theme-chalk/gulpfile.js && cp-cli packages/theme-chalk/lib lib/theme-chalk",
     "build:utils": "cross-env BABEL_ENV=utils babel  src --out-dir lib --ignore src/index.js",
-    "dist": "npm run build:file  && webpack --config build/webpack.conf.js && webpack --config build/webpack.common.js && npm run build:utils",
+    "dist": "npm run build:file  && npm run build:theme && webpack --config build/webpack.conf.js && webpack --config build/webpack.common.js && webpack --config build/webpack.component.js && npm run build:utils",
     "docs": "vue-styleguidist server",
     "docs:build": "vue-styleguidist build"
   },
