@@ -1,5 +1,6 @@
 export default {
   country: {
-    selectText: 'Please select'
+    selectText: 'Please select',
+    searchPlaceHolder: 'Search'
   }
 }

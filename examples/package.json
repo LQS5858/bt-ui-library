@@ -1,0 +1,35 @@
+{
+  "name": "examples",
+  "version": "1.0.0",
+  "description": "使用vuepres开发vue组件文档示例",
+  "main": "entry.js",
+  "scripts": {
+    "dev": "vuepress dev docs",
+    "build": "vuepress build docs",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/LQS5858/bt-ui-library.git"
+  },
+  "keywords": [
+    "vuepress",
+    "vue",
+    "ui",
+    "library",
+    "vue组件",
+    "组件"
+  ],
+  "author": "Ricardo",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/LQS5858/bt-ui-library/issues"
+  },
+  "homepage": "https://github.com/LQS5858/bt-ui-library#readme",
+  "devDependencies": {
+    "@vuepress/plugin-nprogress": "^1.8.2",
+    "async-validator": "1.11.5",
+    "element-ui": "^2.15.2",
+    "vuepress": "^1.8.2"
+  }
+}

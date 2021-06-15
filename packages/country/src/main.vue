@@ -15,7 +15,7 @@
     <div class="list"
          :id="showPopver?'show-list':''"
          :style="listStyle">
-      <el-input placeholder="99"
+      <el-input :placeholder="t('country.searchPlaceHolder')"
                 id="searchInput"
                 clearable
                 v-model.trim="searchValue">
