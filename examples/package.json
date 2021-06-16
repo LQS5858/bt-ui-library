@@ -30,6 +30,7 @@
     "@vuepress/plugin-nprogress": "^1.8.2",
     "async-validator": "1.11.5",
     "element-ui": "^2.15.2",
+    "highlight.js": "^11.0.1",
     "vuepress": "^1.8.2"
   }
 }

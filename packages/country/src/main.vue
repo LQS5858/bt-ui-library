@@ -54,19 +54,21 @@ export default {
     event: 'change'
   },
   props: {
-    /*
-    @params
-    value 双向数据绑定v-model
-    list 下拉展开列表数据
-    listStyle 展开列表容器样式
-    rowStyle 展开列表行样式
-    selectStyle 选择框样式
-    hoverBg 鼠标hover背景样式
+    // value 双向数据绑定v-model
+    // list 下拉展开列表数据
+    // listStyle 展开列表容器样式
+    // rowStyle 展开列表行样式
+    // selectStyle 选择框样式
+    // hoverBg 鼠标hover背景样式
+    /**
+     * 双向数据绑定
      */
     value: {
       type: [String]
     },
-    //   list数据格式
+    /**
+     * 国家下拉列表数组
+     */
     list: {
       type: [Array],
       required: true,
@@ -91,10 +93,16 @@ export default {
         ]
       }
     },
+    /**
+     * 国家下拉列表行背景
+     */
     hoverBg: {
       type: [String],
       default: '#357DE1'
     },
+    /**
+     * 国家下拉列表行样式
+     */
     rowStyle: {
       type: [Object],
       default () {
@@ -103,6 +111,9 @@ export default {
         }
       }
     },
+    /**
+     * 国家下拉列表样式
+     */
     listStyle: {
       type: [Object],
       default () {
@@ -114,9 +125,15 @@ export default {
         }
       }
     },
+    /**
+     * 国家下拉列表搜索占位
+     */
     placeHolder: {
       type: String
     },
+    /**
+     * 国家下拉列表选择框样式
+     */
     selectStyle: {
       type: [Object],
       default () {
