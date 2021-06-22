@@ -23,6 +23,7 @@ themes.forEach(theme => {
   const isSCSS = theme !== 'theme-default'
   let indexContent = isSCSS ? '@import "./base.scss";\n' : '@import "./base.css";\n'
   Components.forEach(key => {
+    console.log('key>>>', key)
     if (['icon', 'option', 'option-group'].indexOf(key) > -1) return
     const fileName = key + (isSCSS ? '.scss' : '.css')
     indexContent += `@import './${fileName}';\n`

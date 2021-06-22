@@ -2,11 +2,13 @@
 
 import Country from '../packages/country/index.js'
 import Demo from '../packages/demo/index.js'
+import MarketDrawer from '../packages/market-drawer/index.js'
 import locale from './locale'
 
 const components = [
   Country,
-  Demo
+  Demo,
+  MarketDrawer
 ]
 
 const install = function (Vue, opts = {}) {
@@ -34,5 +36,6 @@ export default {
   i18n: locale.i18n,
   install,
   Country,
-  Demo
+  Demo,
+  MarketDrawer
 }

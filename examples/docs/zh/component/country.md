@@ -9,3 +9,7 @@
 :listStyle="{ border: '1px solid rgba(215, 215, 215, 1)', borderRadius: '4px', backgroundColor: '#fff', boxShadow: '0 2px 12px 0 rgb(0 0 0 / 10%)' }" :rowStyle
 ="{color:'#000'}"></bt-country>
 </collapsible>
+
+#### 调试
+
+<bt-market-drawer></bt-market-drawer>
