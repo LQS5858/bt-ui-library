@@ -12,4 +12,4 @@
 
 #### 调试
 
-<bt-market-drawer></bt-market-drawer>
+<bt-market-drawer tableContentHeight="300px"></bt-market-drawer>

@@ -68,6 +68,16 @@ module.exports = {
             preserveWhitespace: false
           }
         }
+      },
+      {
+        test: /\.(svg|otf|ttf|woff2?|eot|gif|png|jpe?g)(\?\S*)?$/,
+        loader: 'url-loader',
+        include: 'src/assets',
+        options: {
+          limit: 10000,
+          name: '[name].[contenthash:7].[ext]',
+          outputPath: 'lib/imgs'
+        }
       }
     ]
   },

@@ -5,7 +5,8 @@ exports.alias = {
   main: path.resolve(__dirname, '../src'),
   packages: path.resolve(__dirname, '../packages'),
   examples: path.resolve(__dirname, '../examples'),
-  'bt-ui': path.resolve(__dirname, '../')
+  'bt-ui': path.resolve(__dirname, '../'),
+  mixins: path.resolve(__dirname, '../src/mixins')
 }
 
 exports.vue = {
