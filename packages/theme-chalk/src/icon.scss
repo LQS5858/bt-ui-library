@@ -22,12 +22,20 @@
     font-style: normal;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
-}
-
-.bt-icon-approve:before {
+  }
+  
+  .bt-icon-top-s:before {
+    content: "\e640";
+  }
+  
+  .bt-icon-below-s:before {
+    content: "\e641";
+  }
+  
+  .bt-icon-approve:before {
     content: "\e657";
-}
-
-.bt-icon-shenhe:before {
+  }
+  
+  .bt-icon-shenhe:before {
     content: "\e658";
-}
+  }

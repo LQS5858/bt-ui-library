@@ -338,14 +338,14 @@ export default {
           {
             label: 'marketDrawer.price',
             value: 'price',
-            upIcon: 'iconfont icon-top-s',
-            downIcon: 'iconfont icon-below-s'
+            upIcon: 'bt-icon-top-s',
+            downIcon: 'bt-icon-below-s'
           },
           {
             label: 'marketDrawer.rose',
             value: 'updown',
-            upIcon: 'iconfont icon-top-s',
-            downIcon: 'iconfont icon-below-s'
+            upIcon: 'bt-icon-top-s',
+            downIcon: 'bt-icon-below-s'
           }
         ]
       }
