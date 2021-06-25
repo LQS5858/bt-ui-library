@@ -325,7 +325,7 @@ export default {
       }
     },
     /**
-     * 表格头部
+     * 表格头部|
      */
     header: {
       type: Array,

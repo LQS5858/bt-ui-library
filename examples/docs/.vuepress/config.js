@@ -46,6 +46,11 @@ module.exports = {
                                 title: 'country',
                                 collapsable: false,
                                 path: '/zh/component/country.md'
+                            },
+                            {
+                                title: 'MarketDrawer',
+                                collapsable: false,
+                                path: '/zh/component/MarketDrawer.md'
                             }
                         ]
                     }

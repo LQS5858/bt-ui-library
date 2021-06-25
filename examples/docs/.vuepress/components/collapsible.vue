@@ -16,6 +16,8 @@
            ref="xxx">
         <!-- <w-icon class="icon-down"
                 :name="isShow[0] === false ? 'down' : 'up'"></w-icon> -->
+        <i class="icon-down"
+           :class="isShow[0]===false?'bt-icon-below-s':'bt-icon-top-s'"></i>
         <span class="lock-code-word">{{isShow[0] === false ? '显示代码' : '隐藏代码'}}</span>
       </div>
     </div>

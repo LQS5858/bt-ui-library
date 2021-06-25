@@ -15,5 +15,8 @@ export default {
 <style lang="styl" scoped>
 .demo-block-wrap {
   border: 1px solid #ebebeb;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 </style>
