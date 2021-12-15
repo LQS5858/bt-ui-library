@@ -72,7 +72,7 @@ module.exports = {
       {
         test: /\.(svg|otf|ttf|woff2?|eot|gif|png|jpe?g)(\?\S*)?$/,
         loader: 'url-loader',
-        include: 'src/assets',
+        include: path.resolve(__dirname, '../src/assets'),
         options: {
           limit: 10000,
           name: '[name].[contenthash:7].[ext]',
